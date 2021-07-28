@@ -1,45 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Calculator</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-
-   
     <div class="container">
+    <label for="container-type">Rodzaj kontenera</label>
+    <select name="container-type" id="dv">
+        <option value=""></option>
+        <option value="20dv">20' dv</option>
+        <option value="40dv">40' dv</option>
+    </select><br>
+   <h3>Wymiary palety:</h3>
+   <!-- <label for="pt-amount">Ilosc palet</label>
+    <input name="pt-amount" id="pt-amount" type="number"><br> -->
+    <label for="pt-width">Width</label>
+    <input name="pt-width" id="pt-width" type="number"><br>
+    <label for="pt-height">Height</label>
+    <input name="pt-height" id="pt-height" type="number"><br>
+    <label for="pt-length">Length</label>
+    <input name="pt-length"type="number" id="pt-length"><br>
+    <label for="double-pallet">Piętrowalne palety? </label>
+    <input name="double-pallet"type="checkbox" id="double-pallet"><br>
+    <input type="button" value="OK" onClick="calc()">
 
-        <div class="result">
+    <p id="result"></p>
 
-        </div>
-        <div class="square-box">
-            <div class="box clear"> <button class="but" value="clear" >C</button> </div>
-            <div class="box"> <button class="but" value="del"> <--</button></div> 
-            <!-- usuwa jedna cyfre -->
-            <div class="box orangeb"> <button class="but2"value="div">/</button></div>
-            <div class="box"> <button class="but" value="7">7</button></div>
-            <div class="box"> <button class="but" value="8">8</button></div>
-            <div class="box"> <button class="but" value="9">9</button></div>
-            <div class="box orangeb"><button class="but2" value="multi">x</button></div>
-            <div class="box"> <button class="but" value="4">4</button></div>
-            <div class="box"> <button class="but" value="5">5</button></div>
-            <div class="box"> <button class="but" value="6">6</button></div>
-            <div class="box orangeb"><button class="but2" value="sub">-</button></div>
-            <div class="box"> <button class="but" value="1">1</button></div>
-            <div class="box"> <button class="but" value="2">2</button></div>
-            <div class="box"> <button class="but" value="3">3</button></div>
-            <div class="box orangeb"> <button class="but2" value="add">+</button></div>
-            <div class="box zero"><button class="but" value="0">0</button></div>
-            <div class="box orangeb"><button class="but2" value="finish">=</button></div>
-        </div>
+</div>
 
 
 
-    </div>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
